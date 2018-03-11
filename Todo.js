@@ -1,3 +1,5 @@
-alert(
-    "This is going to be a really long alert because I was really bored. "
-)
+var li = document.querySelector("li");
+
+li.addEventListener("mouseover", function(){
+    li.textContent = "I changed!";
+});
