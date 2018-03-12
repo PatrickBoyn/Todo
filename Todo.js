@@ -1,4 +1,4 @@
-var li = document.querySelector("li");
+var li = document.querySelectorAll("li");
 
 li.addEventListener("mouseover", function(){
     li.style.color = "green";
