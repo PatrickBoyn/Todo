@@ -4,10 +4,11 @@ for(var i = 0; i < li.length; i++){
     li[i].addEventListener("mouseover", function(){
         this.style.color = "green";
     });
-}
-
-for(var i = 0; i < li.length; i++){
     li[i].addEventListener("mouseout", function(){
         this.style.color = "black";
     });
+    li[i].addEventListener("click", function(){
+        this.classList.toggle("done");
+    });
 }
+
