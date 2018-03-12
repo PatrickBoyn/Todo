@@ -2,10 +2,10 @@ var li = document.querySelectorAll("li");
 
 for(var i = 0; i < li.length; i++){
     li[i].addEventListener("mouseover", function(){
-        this.style.color = "green";
+        this.classList.add("selected");
     });
     li[i].addEventListener("mouseout", function(){
-        this.style.color = "black";
+        this.classList.remove("selected");
     });
     li[i].addEventListener("click", function(){
         this.classList.toggle("done");
